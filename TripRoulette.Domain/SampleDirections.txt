@@ -1,0 +1,339 @@
+﻿{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 52.653625,
+               "lng" : 1.331738
+            },
+            "southwest" : {
+               "lat" : 52.628738,
+               "lng" : 1.27001
+            }
+         },
+         "copyrights" : "Map data ©2014 Google",
+         "legs" : [
+            {
+               "arrival_time" : {
+                  "text" : "10:32",
+                  "time_zone" : "Europe/London",
+                  "value" : 1416565947
+               },
+               "departure_time" : {
+                  "text" : "09:50",
+                  "time_zone" : "Europe/London",
+                  "value" : 1416563400
+               },
+               "distance" : {
+                  "text" : "8.1 km",
+                  "value" : 8052
+               },
+               "duration" : {
+                  "text" : "42 mins",
+                  "value" : 2547
+               },
+               "end_address" : "Norwich, Norwich, Norfolk NR7 9AJ, UK",
+               "end_location" : {
+                  "lat" : 52.6483814,
+                  "lng" : 1.3300214
+               },
+               "start_address" : "Norwich, Norwich, Norfolk NR3 2PP, UK",
+               "start_location" : {
+                  "lat" : 52.653625,
+                  "lng" : 1.270344
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "4.0 km",
+                        "value" : 3983
+                     },
+                     "duration" : {
+                        "text" : "18 mins",
+                        "value" : 1080
+                     },
+                     "end_location" : {
+                        "lat" : 52.628738,
+                        "lng" : 1.295388
+                     },
+                     "html_instructions" : "Bus towards Lakenham",
+                     "polyline" : {
+                        "points" : "c|j`IsbwF`L`A~T}BzA}IcAcMgA{I|LiBxFeGbDcNxF{SjIkT|JiThLy^|H_Cr\\yM`K`U"
+                     },
+                     "start_location" : {
+                        "lat" : 52.653625,
+                        "lng" : 1.270344
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 52.628738,
+                              "lng" : 1.295388
+                           },
+                           "name" : "Castle Meadow (Stop CV)"
+                        },
+                        "arrival_time" : {
+                           "text" : "10:08",
+                           "time_zone" : "Europe/London",
+                           "value" : 1416564480
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 52.653625,
+                              "lng" : 1.270344
+                           },
+                           "name" : "Bowers Avenue (o/s 184)"
+                        },
+                        "departure_time" : {
+                           "text" : "09:50",
+                           "time_zone" : "Europe/London",
+                           "value" : 1416563400
+                        },
+                        "headsign" : "Lakenham",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "First in Norfolk & Suffolk",
+                                 "url" : "http://www.firstgroup.com/ukbus/suffolk_norfolk/"
+                              }
+                           ],
+                           "color" : "#990065",
+                           "name" : "Purple Line",
+                           "short_name" : "39",
+                           "text_color" : "#ffffff",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/bus.png",
+                              "name" : "Bus",
+                              "type" : "BUS"
+                           }
+                        },
+                        "num_stops" : 15
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 134
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 134
+                     },
+                     "end_location" : {
+                        "lat" : 52.629383,
+                        "lng" : 1.297077
+                     },
+                     "html_instructions" : "Walk to Castle Meadow (Stop CF)",
+                     "polyline" : {
+                        "points" : "s`f`Ie_|F_CqI"
+                     },
+                     "start_location" : {
+                        "lat" : 52.628738,
+                        "lng" : 1.295388
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "0.1 km",
+                              "value" : 134
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 134
+                           },
+                           "end_location" : {
+                              "lat" : 52.629383,
+                              "lng" : 1.297077
+                           },
+                           "polyline" : {
+                              "points" : "s`f`Ie_|F_CqI"
+                           },
+                           "start_location" : {
+                              "lat" : 52.628738,
+                              "lng" : 1.295388
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "3.6 km",
+                        "value" : 3581
+                     },
+                     "duration" : {
+                        "text" : "13 mins",
+                        "value" : 780
+                     },
+                     "end_location" : {
+                        "lat" : 52.64591600000001,
+                        "lng" : 1.330452
+                     },
+                     "html_instructions" : "Bus towards Heartsease",
+                     "polyline" : {
+                        "points" : "sdf`Iwi|F_@yUhCid@c\\sPuAyp@{F}XaJid@mHoBcOsGgLuLsDpCoJnB"
+                     },
+                     "start_location" : {
+                        "lat" : 52.629383,
+                        "lng" : 1.297077
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 52.64591600000001,
+                              "lng" : 1.330452
+                           },
+                           "name" : "adj Williamson Close"
+                        },
+                        "arrival_time" : {
+                           "text" : "10:28",
+                           "time_zone" : "Europe/London",
+                           "value" : 1416565680
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 52.629383,
+                              "lng" : 1.297077
+                           },
+                           "name" : "Castle Meadow (Stop CF)"
+                        },
+                        "departure_time" : {
+                           "text" : "10:15",
+                           "time_zone" : "Europe/London",
+                           "value" : 1416564900
+                        },
+                        "headsign" : "Heartsease",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "First in Norfolk & Suffolk",
+                                 "url" : "http://www.firstgroup.com/ukbus/suffolk_norfolk/"
+                              }
+                           ],
+                           "color" : "#cc0000",
+                           "name" : "Red Line",
+                           "short_name" : "23A",
+                           "text_color" : "#ffffff",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/bus.png",
+                              "name" : "Bus",
+                              "type" : "BUS"
+                           }
+                        },
+                        "num_stops" : 11
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 km",
+                        "value" : 354
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 266
+                     },
+                     "end_location" : {
+                        "lat" : 52.6483814,
+                        "lng" : 1.3300214
+                     },
+                     "html_instructions" : "Walk to Norwich, Norwich, Norfolk NR7 9AJ, UK",
+                     "polyline" : {
+                        "points" : "_li`IizbGVOSgAMq@CSAYAUsABQH{@b@CAA@i@ZEFEHaDlBOL]^a@^IF"
+                     },
+                     "start_location" : {
+                        "lat" : 52.64591600000001,
+                        "lng" : 1.330452
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "68 m",
+                              "value" : 68
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 48
+                           },
+                           "end_location" : {
+                              "lat" : 52.6460057,
+                              "lng" : 1.3314779
+                           },
+                           "html_instructions" : "Walk \u003cb\u003enorth-east\u003c/b\u003e on \u003cb\u003eChurchman Rd\u003c/b\u003e towards \u003cb\u003eWilliamson Cl\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "_li`IizbGVOSgAMq@CSAYAU"
+                           },
+                           "start_location" : {
+                              "lat" : 52.64591600000001,
+                              "lng" : 1.330452
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.1 km",
+                              "value" : 131
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 96
+                           },
+                           "end_location" : {
+                              "lat" : 52.6471248,
+                              "lng" : 1.3310013
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e towards \u003cb\u003eAvian Way\u003c/b\u003e",
+                           "maneuver" : "turn-left",
+                           "polyline" : {
+                              "points" : "qli`Iw`cGsABQH{@b@CAA@i@ZEFEH"
+                           },
+                           "start_location" : {
+                              "lat" : 52.6460057,
+                              "lng" : 1.3314779
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.2 km",
+                              "value" : 155
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 122
+                           },
+                           "end_location" : {
+                              "lat" : 52.6483814,
+                              "lng" : 1.3300214
+                           },
+                           "html_instructions" : "Continue onto \u003cb\u003eAvian Way\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                           "polyline" : {
+                              "points" : "osi`Iw}bGaDlBOL]^a@^IF"
+                           },
+                           "start_location" : {
+                              "lat" : 52.6471248,
+                              "lng" : 1.3310013
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "c|j`IsbwF`L`A~T}BzA}IcAcMgA{I|LiBxFeGbDcNxF{SjIkT|JiThLy^|H_Cr\\yM`K`U_CqI_@yUhCid@c\\sPuAyp@}Qg~@mHoBcOsGgLuLsDpCoJnBVOa@yBEm@AUsABmAl@E?o@b@EHaDlBm@l@k@f@"
+         },
+         "summary" : "",
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

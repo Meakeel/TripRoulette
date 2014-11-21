@@ -1,0 +1,8 @@
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.dll.config
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.pdb
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.csprojResolveAssemblyReference.cache
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.pdb
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.xml
