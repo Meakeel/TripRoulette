@@ -1,0 +1,80 @@
+﻿@model TripRoulette.Domain.Entities.Event
+
+@{
+    ViewBag.Title = "EventCreate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("EventCreate", "Admin"))
+{
+<div>
+
+    <table class="table table-striped table-condensed table-bordered">
+        <tr>
+            <td class="text-center">Name</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.Name)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Start Date</td>
+            <td class="text-left">
+                @Html.TextBoxFor(model => model.StartDate, new { @class = "form-control datepicker", placeholder = "Enter date here..." })
+                @Html.ValidationMessageFor(model => model.StartDate)
+            </td>
+        </tr>
+    <tr>
+            <td class="text-center">End Date</td>
+        <td class="text-left">
+            @Html.TextBoxFor(model => model.EndDate, new { @class = "form-control datepicker", placeholder = "Enter date here..." })
+            @Html.ValidationMessageFor(model => model.EndDate)
+        </td>
+        </tr>
+        <tr>
+            <td class="text-center">Description</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.Description)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Price</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.Price)</td>              
+        </tr>
+        <tr>
+            <td class="text-center">Lunch Price</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.LunchPrice)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Dinner Price</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.DinnerPrice)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Theme</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.Theme)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Post Code</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.Postcode)</td>
+        </tr><tr>
+            <td class="text-center">Hint</td>
+                 <td class="text-left">@Html.TextBoxFor(model => model.Hint)</td>
+        </tr><tr>
+            <td class="text-center">Full Details</td>
+                 <td class="text-left">@Html.TextBoxFor(model => model.FullDetails)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Duration</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.Duration)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Min People</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.MinPeople)</td>
+        </tr>
+        <tr>
+            <td class="text-center">Max People</td>
+            <td class="text-left">@Html.TextBoxFor(model => model.MaxPeople)</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="panel-footer">
+    <input type="submit" value="Save" class="btn btn-default" />
+</div>
+}

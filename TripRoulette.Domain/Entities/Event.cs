@@ -23,6 +23,7 @@ namespace TripRoulette.Domain.Entities
         private int _duration;
         private int _minPeople;
         private int _maxPeople;
+        private EventDetailCollection _eventDetails; 
 
 
         public int EventID
@@ -107,6 +108,12 @@ namespace TripRoulette.Domain.Entities
             set { _maxPeople = value; }
         }
 
+        public EventDetailCollection EventDetails
+        {
+            get { return _eventDetails; }
+            set { _eventDetails = value; }
+        }
+
         //Calls
 
         public static Event GetEvent(int Id)
@@ -120,5 +127,29 @@ namespace TripRoulette.Domain.Entities
             DataAccess dbAccess = new DataAccess();
             return dbAccess.Get_Events();
         }
+
+        public Event()
+            {
+                DefaultConstructor();
+            }
+
+        private void DefaultConstructor()
+        {
+            _name = "";
+            _startDate = DateTime.UtcNow;
+            _endDate = DateTime.UtcNow.AddMonths(1);
+            _description = "";
+            _price = 0;
+            _lunchPrice = 0;
+            _dinnerPrice = 0;
+            _theme = "";
+            _postcode = "";
+            _hint =  "";
+            _fullDetails = "";
+            _duration = 0;
+            _minPeople = 0;
+            _maxPeople = 0;
+        }
+
     }
 }

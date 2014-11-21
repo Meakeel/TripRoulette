@@ -69,13 +69,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MAPS_API_Key.txt" />
     <Content Include="SampleDirections.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Concrete\DataAccess.cs" />
-    <Compile Include="Concrete\JsonTest.cs" />
+    <Compile Include="Concrete\DataClean.cs" />
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\EventCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
