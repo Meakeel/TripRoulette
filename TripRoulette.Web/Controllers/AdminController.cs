@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TripRoulette.Domain.Entities;
-using TripRoulette.Web.Models;
 using TripRoulette.Domain.Concrete;
 
 namespace TripRoulette.Web.Controllers
@@ -29,6 +28,19 @@ namespace TripRoulette.Web.Controllers
             //.FirstOrDefault(p => p.ProductID == productId);
             return View("Event",events);
         }
+        //[HttpPost]
+        //public ActionResult Events(Event eventItem)
+        //{
+
+        //    EventCollection events = new EventCollection();
+        //    events = Event.GetEvents();
+
+        //    //events = Event.
+
+        //    //        Product product = repository.Products
+        //    //.FirstOrDefault(p => p.ProductID == productId);
+        //    return View("Event", events);
+        //}
 
         public ActionResult EventEdit()
         {
@@ -47,13 +59,13 @@ namespace TripRoulette.Web.Controllers
         {
 
             EventCollection events = new EventCollection();
-            events = Event.GetEventsAndDetails();
-
+            events = Event.GetEventsAndDetails(1);
+            Event row = events[0];
             //events = Event.
 
             //        Product product = repository.Products
             //.FirstOrDefault(p => p.ProductID == productId);
-            return View("EventDetail", events);
+            return View("EventDetail", row);
         }
 
         [HttpPost]

@@ -82,10 +82,10 @@
             @foreach (var eventDetail in Model.EventDetails)
             {
             <tr>
-                <td>eventDetail.DayofWeek</td>
-                <td>eventDetail.AllDay</td>
-                <td>eventDetail.StartTime</td>
-                <td>eventDetail.EndTime</td>
+                <td>@Html.TextBoxFor(model => eventDetail.DayOfWeek)</td>
+                <td>@Html.CheckBoxFor(model => eventDetail.allDay)</td>
+                <td>@Html.TextBoxFor(model => eventDetail.StartTime)</td>
+                <td>@Html.TextBoxFor(model => eventDetail.EndTime)</td>
             </tr>
             }
 

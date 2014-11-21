@@ -128,10 +128,15 @@ namespace TripRoulette.Domain.Entities
             return dbAccess.Get_Events();
         }
 
-        public static EventCollection GetEventsAndDetails()
+        public static EventCollection GetEventsAndDetails(int eventID)
         {
             DataAccess dbAccess = new DataAccess();
-            return dbAccess.Get_EventsAndDetails();
+            if (eventID == 0)
+            { return dbAccess.Get_EventsAndDetails(); }
+            else 
+            { return dbAccess.Get_EventAndDetails(eventID); }
+            
+            
         }
 
         public Event()

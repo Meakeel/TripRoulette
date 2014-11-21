@@ -77,15 +77,15 @@ namespace TripRoulette.Domain.Concrete
             return eventCollection;
         }
 
-        public EventCollection Get_EventsAndDetails()
+        public EventCollection Get_EventAndDetails(int eventID)
         {
             EventCollection eventCollection = new EventCollection();
 
             using (SqlConnection sqlConnection = new SqlConnection(SqlconnectionString))
             {
-
                 sqlConnection.Open();
-                string strSqlQry = "select * from Event";
+                string strSqlQry = "select * from Event where eventID=" + eventID.ToString();
+                
                 SqlCommand cmd = new SqlCommand(strSqlQry, sqlConnection);
 
                 SqlDataReader r = cmd.ExecuteReader();
@@ -120,7 +120,7 @@ namespace TripRoulette.Domain.Concrete
 
                     EventDetailCollection eventDetails = new EventDetailCollection();
 
-                    string strSqlQryDetails = "select * from EventDetail where eventDetailID =" + row.EventID.ToString();
+                    string strSqlQryDetails = "select * from EventDetail where eventID =" + row.EventID.ToString();
                     SqlCommand cmd = new SqlCommand(strSqlQryDetails, sqlConnection);
                     
                     SqlDataReader t = cmd.ExecuteReader();
@@ -135,7 +135,77 @@ namespace TripRoulette.Domain.Concrete
                         eventDetailRow.allDay = Convert.ToBoolean(t["allDay"]);
                         eventDetails.Add(eventDetailRow);
                     }
+
                     t.Close();
+
+                    row.EventDetails = eventDetails;
+
+                }
+            }
+
+            return eventCollection;
+        }
+
+        public EventCollection Get_EventsAndDetails()
+        {
+            EventCollection eventCollection = new EventCollection();
+
+            using (SqlConnection sqlConnection = new SqlConnection(SqlconnectionString))
+            {
+                string strSqlQry = "select * from Event";
+
+                SqlCommand cmd = new SqlCommand(strSqlQry, sqlConnection);
+
+                SqlDataReader r = cmd.ExecuteReader();
+                while (r.Read())
+                {
+                    Event eventrow = new Event();
+                    eventrow.EventID = Convert.ToInt32(r["eventID"]);
+                    eventrow.Name = Convert.ToString(r["name"]);
+                    eventrow.StartDate = Convert.ToDateTime(r["startDate"]);
+                    eventrow.EndDate = Convert.ToDateTime(r["endDate"]);
+                    eventrow.Description = Convert.ToString(r["description"]);
+                    eventrow.Price = Convert.ToDecimal(r["price"]);
+                    eventrow.LunchPrice = Convert.ToDecimal(r["lunchPrice"]);
+                    eventrow.DinnerPrice = Convert.ToDecimal(r["dinnerPrice"]);
+                    eventrow.Theme = Convert.ToString(r["theme"]);
+                    eventrow.Postcode = Convert.ToString(r["postcode"]);
+                    eventrow.Hint = Convert.ToString(r["hint"]);
+                    eventrow.FullDetails = Convert.ToString(r["fullDetails"]);
+                    eventrow.Duration = Convert.ToInt32(r["duration"]);
+                    eventrow.MinPeople = Convert.ToInt32(r["minPeople"]);
+                    eventrow.MaxPeople = Convert.ToInt32(r["maxPeople"]);
+                    eventCollection.Add(eventrow);
+                }
+
+            }
+
+            using (SqlConnection sqlConnection = new SqlConnection(SqlconnectionString))
+            {
+                sqlConnection.Open();
+                foreach (Event row in eventCollection)
+                {
+
+                    EventDetailCollection eventDetails = new EventDetailCollection();
+
+                    string strSqlQryDetails = "select * from EventDetail where eventID =" + row.EventID.ToString();
+                    SqlCommand cmd = new SqlCommand(strSqlQryDetails, sqlConnection);
+
+                    SqlDataReader t = cmd.ExecuteReader();
+                    while (t.Read())
+                    {
+                        EventDetail eventDetailRow = new EventDetail();
+                        eventDetailRow.EventDetailID = Convert.ToInt32(t["eventDetailID"]);
+                        eventDetailRow.EventID = Convert.ToInt32(t["eventID"]);
+                        eventDetailRow.DayOfWeek = Convert.ToInt32(t["dayOfWeek"]);
+                        eventDetailRow.StartTime = Convert.ToDateTime(t["startTime"]);
+                        eventDetailRow.EndTime = Convert.ToDateTime(t["endTime"]);
+                        eventDetailRow.allDay = Convert.ToBoolean(t["allDay"]);
+                        eventDetails.Add(eventDetailRow);
+                    }
+
+                    t.Close();
+
                     row.EventDetails = eventDetails;
 
                 }
