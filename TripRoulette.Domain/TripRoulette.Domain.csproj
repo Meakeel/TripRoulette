@@ -77,6 +77,8 @@
     <Compile Include="Concrete\DataClean.cs" />
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\EventCollection.cs" />
+    <Compile Include="Entities\EventDetail.cs" />
+    <Compile Include="Entities\EventDetailCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -240,6 +240,7 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\EventCreate.cshtml" />
     <Content Include="Views\Admin\EventEdit.cshtml" />
+    <Content Include="Views\Admin\EventDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -43,6 +43,19 @@ namespace TripRoulette.Web.Controllers
             return View("EventEdit", events);
         }
 
+        public ActionResult EventDetails()
+        {
+
+            EventCollection events = new EventCollection();
+            events = Event.GetEventsAndDetails();
+
+            //events = Event.
+
+            //        Product product = repository.Products
+            //.FirstOrDefault(p => p.ProductID == productId);
+            return View("EventDetail", events);
+        }
+
         [HttpPost]
         public ActionResult EventDelete(int eventid)
         {

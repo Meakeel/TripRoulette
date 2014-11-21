@@ -26,7 +26,9 @@ C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\System.Web.Ra
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\System.Web.WebPages.Deployment.dll
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\System.Web.WebPages.dll
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\TripRoulette.Domain.dll
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\WebGrease.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\TripRoulette.Domain.pdb
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\System.Web.Helpers.xml
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\System.Web.Mvc.xml
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\System.Web.Optimization.xml
@@ -53,5 +55,3 @@ C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\Microsoft.Owi
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\obj\Debug\TripRoulette.Web.csprojResolveAssemblyReference.cache
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\obj\Debug\TripRoulette.Web.dll
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\obj\Debug\TripRoulette.Web.pdb
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\TripRoulette.Domain.dll
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Web\bin\TripRoulette.Domain.pdb

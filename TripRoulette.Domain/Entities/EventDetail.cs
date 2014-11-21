@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using TripRoulette.Domain.Concrete;
 
@@ -9,10 +10,23 @@ namespace TripRoulette.Domain.Entities
     public class EventDetail
     {
 
+        private int _eventID;
+        private int _eventDetailID;
         private int _dayOfWeek;
         public DateTime _startTime;
         public DateTime _endTime;
+        public bool _allDay;
 
+        public int EventID
+        {
+            get { return _eventID; }
+            set { _eventID = value; }
+        }
+        public int EventDetailID
+        {
+            get { return _eventDetailID; }
+            set { _eventDetailID = value; }
+        }
 
         public int DayOfWeek
         {
@@ -30,16 +44,11 @@ namespace TripRoulette.Domain.Entities
             get { return _endTime; }
             set { _endTime = value; }
         }
-
-        public void Save()
+        public bool allDay
         {
-            DataAccess dbconnection = new DataAccess();
-            //Loop through the collection and save each row.
-            foreach (Event row in this)
-            {
-                dbconnection.InsertEvent(row);
-            }
+            get { return _allDay; }
+            set { _allDay = value; }
         }
-    
+
     }
 }
