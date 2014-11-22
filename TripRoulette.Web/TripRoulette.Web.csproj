@@ -176,6 +176,7 @@
     <Content Include="Content\jquery.vegas.css" />
     <Content Include="Content\logo-white.png" />
     <Content Include="Content\logo.png" />
+    <Content Include="Content\pay.png" />
     <Content Include="Content\Site - Copy.css" />
     <Content Include="Content\slider-left.png" />
     <Content Include="Content\slider-right.png" />
