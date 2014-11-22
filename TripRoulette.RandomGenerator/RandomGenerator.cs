@@ -197,6 +197,7 @@ namespace TripRoulette.RandomGenerator
                             bool search = true;
                             while (search)
                             {
+                                search = false;
                                 rndIndex = rnd.Next(0, matches.Count - 1);
 
                                 if (!tried.Contains(rndIndex))
