@@ -227,7 +227,6 @@
     <Content Include="Views\Admin\Event.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\EventCreate.cshtml" />
-    <Content Include="Views\Admin\EventEdit.cshtml" />
     <Content Include="Views\Admin\EventDetail.cshtml" />
     <Content Include="Scripts\metadata.json" />
     <Content Include="Views\Home\Form.cshtml" />
