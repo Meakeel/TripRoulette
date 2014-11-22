@@ -191,24 +191,24 @@ namespace TripRoulette.RandomGenerator
                             canLoop = false;
                             foundEvent = true;
                         }
-                        else
-                        {
-                            tried.Add(rndIndex);
-                            bool search = true;
-                            while (search)
-                            {
-                                search = false;
-                                rndIndex = rnd.Next(0, matches.Count - 1);
+                        //else
+                        //{
+                        //    tried.Add(rndIndex);
+                        //    bool search = true;
+                        //    while (search)
+                        //    {
+                        //        search = false;
+                        //        rndIndex = rnd.Next(0, matches.Count - 1);
 
-                                if (!tried.Contains(rndIndex))
-                                {
-                                    search = false;
-                                }
+                        //        if (!tried.Contains(rndIndex))
+                        //        {
+                        //            search = false;
+                        //        }
 
-                            }
+                        //    }
 
-                            //This event can not be forefilled, try another.
-                        }
+                        //    //This event can not be forefilled, try another.
+                        //}
                     }
                 }
 
@@ -219,8 +219,6 @@ namespace TripRoulette.RandomGenerator
                         CreateEmail(dt.Rows[rndIndex], routeInfo, emailAddress, eventName, eventDate);
                     }
                 }
-
-                
 
             }
 
