@@ -248,6 +248,18 @@
       <Project>{f59f60cd-c475-40fc-b826-c08d9d0c8cec}</Project>
       <Name>TripRoulette.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TripRoulette.LocationServices\TripRoulette.TransportServices.csproj">
+      <Project>{84f2990f-c688-4e82-a627-14df2cd999ab}</Project>
+      <Name>TripRoulette.TransportServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TripRoulette.RandomGenerator\TripRoulette.RandomGenerator.csproj">
+      <Project>{81676694-f9c6-4e3a-a675-08ee2bcc2265}</Project>
+      <Name>TripRoulette.RandomGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TripRoulette.SQL\TripRoulette.SQL.csproj">
+      <Project>{c225e21e-8882-4d25-8784-030254990aa1}</Project>
+      <Name>TripRoulette.SQL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
