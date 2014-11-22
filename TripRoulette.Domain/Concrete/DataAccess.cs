@@ -238,7 +238,11 @@ namespace TripRoulette.Domain.Concrete
             cmd.Parameters.AddWithValue("@duration", row.Duration);
             cmd.Parameters.AddWithValue("@minPeople", row.MinPeople);
             cmd.Parameters.AddWithValue("@maxPeople", row.MaxPeople);
-
+            //Google Maps Lang / Lat need to be added.
+            decimal lat = (decimal)11.1;
+            decimal lng = (decimal)1.6;
+            cmd.Parameters.AddWithValue("@lat", lat);
+            cmd.Parameters.AddWithValue("@lng", lng);
             cmd.ExecuteNonQuery();
 
         }
