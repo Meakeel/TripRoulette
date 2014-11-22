@@ -43,7 +43,7 @@ namespace TripRoulette.RandomGenerator
 
             try
             {
-                                
+
                 var smtp = new SmtpClient
                 {
                     Host = "smtp.gmail.com",
