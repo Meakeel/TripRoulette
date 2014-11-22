@@ -16,15 +16,24 @@ namespace TripRoulette.Web.Controllers
         public ActionResult SendEmail(string numPeople, string leave, string budget, string leavingfrom)
         {
             /// Code here!!!!.....
-            TripRoulette.RandomGenerator.RandomGenerator.GenerateRandomTrip(
-                Convert.ToInt32(numPeople),
-                DateTime.Parse(leave),
-                Convert.ToDecimal(budget),
-                null,
-                leavingfrom,
-                "crowesoft@gmail.com"
+            /// 
 
-            );
+            try
+            {
+                TripRoulette.RandomGenerator.RandomGenerator.GenerateRandomTrip(
+                    Convert.ToInt32(numPeople),
+                    DateTime.Parse(leave),
+                    Convert.ToDecimal(budget),
+                    null,
+                    leavingfrom,
+                    "crowesoft@gmail.com"
+
+                );
+            }
+            catch(Exception ex)
+            {
+                HttpContext.Trace.Warn(ex.Message);
+            }
 
             ViewBag.Completed = "Completed";
 

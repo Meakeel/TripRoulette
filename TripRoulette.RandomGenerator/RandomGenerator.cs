@@ -218,16 +218,18 @@ namespace TripRoulette.RandomGenerator
                     }
                 }
 
-                return true;
+                
 
             }
 
             catch (Exception ex)
             {
                 HttpContext.Current.Trace.Warn(ex.Message);
-            
+
             }
-        
+            return true;
         }
+
+    }
 
 }
