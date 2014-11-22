@@ -26,6 +26,8 @@ namespace TripRoulette.Web.Controllers
 
             );
 
+            ViewBag.Completed = "Completed";
+
             return View();
         }
 

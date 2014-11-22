@@ -19,6 +19,5 @@ C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulet
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.pdb
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.dll
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.xml
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.csprojResolveAssemblyReference.cache
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.dll
 C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.pdb
