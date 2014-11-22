@@ -9,6 +9,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using TripRoulette.TransportServices;
+using System.Web;
 
 namespace TripRoulette.RandomGenerator
 {
@@ -40,6 +41,9 @@ namespace TripRoulette.RandomGenerator
              * 
              * The Trip Roulette Team
              * */
+            HttpContext context = HttpContext.Current;
+
+            context.Trace.Warn("I got this far before sending the email.");
 
             try
             {
@@ -60,12 +64,14 @@ namespace TripRoulette.RandomGenerator
                     IsBodyHtml = true
                 })
                 {
+                    context.Trace.Warn("Im sending the email");
                     smtp.Send(message);
                 }
 
             }
             catch (Exception ex)
             {
+                context.Trace.Warn(ex.Message);
 
             }
 
