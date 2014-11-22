@@ -109,10 +109,6 @@ namespace TripRoulette.Web.Controllers
 
             Event events = new Event();
 
-            //events = Event.
-
-            //        Product product = repository.Products
-            //.FirstOrDefault(p => p.ProductID == productId);
             return View("EventCreate", events);
         }
 

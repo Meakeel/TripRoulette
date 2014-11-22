@@ -146,17 +146,17 @@ namespace TripRoulette.Domain.Entities
 
         private void DefaultConstructor()
         {
-            _name = "";
+            _name = " ";
             _startDate = DateTime.UtcNow;
             _endDate = DateTime.UtcNow.AddMonths(1);
-            _description = "";
+            _description = " ";
             _price = 0;
             _lunchPrice = 0;
             _dinnerPrice = 0;
-            _theme = "";
-            _postcode = "";
-            _hint =  "";
-            _fullDetails = "";
+            _theme = " ";
+            _postcode = " ";
+            _hint =  " ";
+            _fullDetails = " ";
             _duration = 0;
             _minPeople = 0;
             _maxPeople = 0;
