@@ -224,7 +224,7 @@ namespace TripRoulette.RandomGenerator
 
             catch (Exception ex)
             {
-                HttpContext.Current.Trace.Warn(ex.Message);
+                HttpContext.Current.Trace.Warn(ex.Message + " ---- " + ex.StackTrace);
 
             }
             return true;

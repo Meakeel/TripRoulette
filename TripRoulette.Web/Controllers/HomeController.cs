@@ -32,7 +32,7 @@ namespace TripRoulette.Web.Controllers
             }
             catch(Exception ex)
             {
-                HttpContext.Trace.Warn(ex.Message);
+                HttpContext.Trace.Warn(ex.Message + " ---- " + ex.StackTrace);
             }
 
             ViewBag.Completed = "Completed";
