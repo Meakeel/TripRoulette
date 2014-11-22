@@ -16,14 +16,7 @@
 	bottom:0;
 	height:50px;
 	background-color:#FF0000;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
+}
 
 btn btn-primary:hover {
     background-color:#185c80;
@@ -194,4 +187,61 @@ blockquote p {
 }
 .page .btn-safe {
     background:#8369b4;
+}
+
+.btn-safe:hover {
+
+}
+.slider-fade {
+    z-index:100;
+    position:relative;
+    top:100px;
+}
+.slider-fade.right {
+    left:196px;
+}
+
+.scroll-text {
+  width: 400px;
+  height: 100px;
+  overflow: hidden;
+}
+.scroll-text ul {
+  width: 800px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0;
+}
+.scroll-text ul li {
+  height: 1.5em;
+}
+.scroll-img {
+  width: 600px;
+  height: 100px;
+  overflow: hidden;
+  font-size: 0;
+}
+.scroll-img ul {
+  height: 100px;
+  margin: 0;
+}
+.scroll-img ul li {
+  display: inline-block;
+  margin: 0px
+}
+.scroll-img ul {
+  width: 1500px;
+}
+
+#slider-container {
+}
+.slider-container-main {
+    padding:180px;
+    display:none;
+}
+.slider-container-main h2 {
+    text-align:center;
+}
+.results {
+    display:none;
 }

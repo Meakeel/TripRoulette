@@ -13,12 +13,26 @@
     <script src="/Scripts/jquery-1.10.2.js"></script>
     <script src="/Scripts/jquery.vegas.js"></script>
     <script src="/Scripts/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.scrollbox.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
+
+            $("#slider1").scrollbox({
+                direction: 'h',
+                step: 1,
+                delay: 0,
+                speed: 30
+            });
 
             $('#go').click(function (e) {
 
                 $('#theform').fadeOut('slow', function () {
+
+                    $('#theform').hide();
+                    $('.slider-container-main').fadeIn();
+
+                    setTimeout(function () { showResults(); }, 6000);
 
                 });
 
@@ -29,6 +43,11 @@
 
             $('.datetimepicker').datetimepicker();
 
+
+            function showResults() {
+                $('.slider-container-main').fadeOut().hide();
+                $('.results').fadeIn();
+            }
 
         });
 
@@ -42,8 +61,8 @@
         <img src="/Content/logo.png" />
 
         <div class="pull-right">
-            <a href="/Home/Form.htm?type=risk" class="btn btn-primary btn-risk">I'm a Risk Taker</a>
-            <a href="/Home/Form.htm?type=safer" class="btn btn-primary btn-safe">I'm a Play it Safer</a>
+            <a href="/form.htm?type=risk" class="btn btn-primary btn-risk">I'm a Risk Taker</a>
+            <a href="/form.htm?type=safer" class="btn btn-primary btn-safe">I'm a Play it Safer</a>
 
         </div>
 
@@ -112,9 +131,29 @@
                 </div>
             </form>
         </div>
+        <div class="slider-container-main">
+            <h2>Finding your adventure</h2>
+            <div id="slider-container">
+                <img src="/Content/slider-left.png" class="slider-fade left" />
+                <img src="/Content/slider-right.png" class="slider-fade right" />
+                <div id="slider1" class="scroll-img">
+                    <ul>
+                        <li><img src="/Content/spin1.jpg" /></li>
+                        <li><img src="/Content/spin2.jpg" /></li>
+                        <li><img src="/Content/spin3.jpg" /></li>
+                        <li><img src="/Content/spin4.jpg" /></li>
+                        <li><img src="/Content/spin5.jpg" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <h2>Your adventure begins...</h2>
+
+        </div>
 
     </div>
-
 
 
 </body>
