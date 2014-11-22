@@ -4,9 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Json;
 using System.IO;
-using Newtonsoft.Json;
 using System.Xml;
 
 namespace TripRoulette.TransportServices

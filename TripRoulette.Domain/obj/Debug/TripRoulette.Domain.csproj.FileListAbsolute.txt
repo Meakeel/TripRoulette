@@ -1,11 +1,3 @@
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.dll.config
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.dll
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.pdb
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.dll
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.xml
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.dll
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.pdb
-C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.csprojResolveAssemblyReference.cache
 C:\TripRoulette\Live3\TripRoulette.Domain\bin\TripRoulette.Domain.dll.config
 C:\TripRoulette\Live3\TripRoulette.Domain\bin\TripRoulette.Domain.dll
 C:\TripRoulette\Live3\TripRoulette.Domain\bin\TripRoulette.Domain.pdb
@@ -22,3 +14,10 @@ C:\Users\Dan\Desktop\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.xml
 C:\Users\Dan\Desktop\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Dan\Desktop\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.dll
 C:\Users\Dan\Desktop\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.pdb
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.dll.config
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\TripRoulette.Domain.pdb
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\bin\Newtonsoft.Json.xml
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.dll
+C:\Users\pauls_000\Visual Studio\TripRoulette\TripRoulette.Domain\obj\Debug\TripRoulette.Domain.pdb
