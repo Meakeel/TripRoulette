@@ -5,6 +5,7 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripRoulette.Web", "TripRoulette.Web\TripRoulette.Web.csproj", "{2299B545-42D6-43B5-9682-548347802BE3}"
 	ProjectSection(ProjectDependencies) = postProject
+		{81676694-F9C6-4E3A-A675-08EE2BCC2265} = {81676694-F9C6-4E3A-A675-08EE2BCC2265}
 		{F59F60CD-C475-40FC-B826-C08D9D0C8CEC} = {F59F60CD-C475-40FC-B826-C08D9D0C8CEC}
 	EndProjectSection
 EndProject
