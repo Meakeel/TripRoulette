@@ -1,24 +1,190 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    line-height:1.9em;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.btn { padding:12px;}
+.wrapper
+{
+	min-height:100%;
+}
+			
+.footer
+{
+	position:absolute;
+	z-index:1000;
+	width:100%;
+	bottom:0;
+	height:50px;
+	background-color:#FF0000;
+}
+
+btn btn-primary:hover {
+    background-color:#185c80;
+    color:#FFF;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.navbar a { 
+    color:#FFF;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.mainnav {
+    opacity:0.7;
+    background:#000;
+    padding:20px;
+    width:100%;
+}
+
+.testimonials {
+    color:#FFF;
+    background-color:#185c80;
+}
+    .testimonials .row {
+        margin:0px;
+    }
+.mainnav {
+    position: relative;
+    margin-top:20%;
+}
+
+.mainnav img, .mainnav div {
+    opacity:1.3 !important;
+}
+.mainnav img {
+    margin-top:6px;
+}
+.btn-primary {
+    background-color:#de7521;
+    color:#FFF;
+}
+.homepage-buttons {
+    text-align:right;
+
+}
+.homepage-buttons a {
+    border-radius:0px;
+    border:0px;
+    padding-left:30px;
+    padding-right:30px;
+    opacity:1.0;
+}
+.homepage-buttons a span {
+    display:block;
+    font-size:20px;
+}
+.homepage-buttons a.first {
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+}
+.homepage-buttons a.last {
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+}
+
+blockquote {
+    border-left:0px;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
+.form-container {
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:200px;
+}
+
+.page .navbar .links {
+    margin-top:20px;
+}
+
+.btn .btn-primary {
+    background:#de7521;
+    padding:10px;
+}
+
+.page h2 {
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:20px;
+    margin-top:0px;
+}
+
+#homepage {
+    padding-top:50px;
+}
+
+
+#homepage #circle {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background:url('/Content/circle.png') no-repeat;
+    z-index:-1;
+}
+
+
+
+#homepage .content {
+    width:250px;
+    margin-left:40px;
+}
+
+#homepage .content p {
+    margin-bottom:30px;
+}
+#homepage a {
+    display:block;
+    margin-bottom:6px;
+    border:0px;
+}
+.btn-safe {
+    background-color: #694d9e;
+}
+.btn-risk {
+    background-color:#d5730a;
+}
+
+.navigation {
+    padding:40px 40px;
+    width:100%;
+}
+.navigation.safer {
+    background:#694d9e;
+}
+
+.left-margin {
+    margin-left:40px;
+    width:200px;
+    margin-top:20px;
+    float:left;
+}
+.main-content {
+    float:left;
+    padding:20px;
+}
+
+.btn {
+    border:1px solid #FFF;
+}
+
+.control-label {
+    font-weight:normal;
+}
+.page .btn-safe {
+    background:#8369b4;
 }

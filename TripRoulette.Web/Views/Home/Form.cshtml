@@ -1,0 +1,121 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Roulette</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/site.css" rel="stylesheet" />
+    <link href="/Content/jquery.datetimepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/Content/jquery.vegas.css" />
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+    <script src="/Scripts/jquery.vegas.js"></script>
+    <script src="/Scripts/jquery.datetimepicker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#go').click(function (e) {
+
+                $('#theform').fadeOut('slow', function () {
+
+                });
+
+                e.stopPropagation();
+                return false;
+            })
+
+
+            $('.datetimepicker').datetimepicker();
+
+
+        });
+
+    </script>
+</head>
+<body class="page">
+
+
+    <div class="navigation safer">
+
+        <img src="/Content/logo.png" />
+
+        <div class="pull-right">
+            <a href="/form.htm?type=risk" class="btn btn-primary btn-risk">I'm a Risk Taker</a>
+            <a href="/form.htm?type=safer" class="btn btn-primary btn-safe">I'm a Play it Safer</a>
+
+        </div>
+
+    </div>
+    <div class="left-margin">
+        <p>So you fancy yourself as a risk taker? Congratulations in taking your first steps!</p>
+
+        <p>Simply enter a few details and Trip Roulette will create a bespoke adventure just for you.</p>
+
+        <p>We do all of the hard work, and organise everything for you, including transport. The twist is you don’t know where you are going or what you will be doing until the day, which is when you will receive an email and text giving information of your trip.</p>
+
+        <p>Now leave the hard work to us and have a great time! </p>
+    </div>
+    <div class="main-content">
+
+        <div class="container-fluid">
+
+            <form class="form-horizontal" role="form" id="theform">
+                <div class="form-group">
+                    <label class="control-label col-sm-6 " for="howmanypeople">How many people</label>
+                    <div class="col-sm-4">
+                        <select name="howmanypeople" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-6 " for="whencanyouleave">When can you leave</label>
+                    <div class="col-sm-4">
+                        <input type="" class="form-control datetimepicker" id="whencanyouleave" placeholder="When can you leave">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-6 " for="return">When do you need to be back (Optional)</label>
+                    <div class="col-sm-4">
+                        <input type="" class="form-control datetimepicker" id="return" placeholder="When do you need to be back">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-6 " for="budget">Budget</label>
+                    <div class="col-sm-4">
+                        <select name="budget" class="form-control">
+                            <option>£50</option>
+                            <option>£100</option>
+                            <option>£150</option>
+                            <option>£200</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-6 " for="leavingfrom">Where will you be leaving from</label>
+                    <div class="col-sm-4">
+                        <input type="" class="form-control" id="leavingfrom" placeholder="Where will you be leaving from">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-sm-6">
+                        <button type="submit" class="btn btn-primary" id="go">Trip Roulette</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

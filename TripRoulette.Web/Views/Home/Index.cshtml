@@ -1,31 +1,48 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Roulette</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/site.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/Content/jquery.vegas.css" />
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+    <script src="/Scripts/jquery.vegas.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.vegas('slideshow', {
+                delay: 8000,
+            backgrounds: [
+                { src: '/Content/background1.jpg', fade: 4000 },
+                { src: '/Content/background2.jpg', fade: 4000 },
+                { src: '/Content/background3.jpg', fade: 4000 }
+        ]
+            });
+        })
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    </script>
+</head>
+<body id="homepage">
+    <div id="circle"></div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="content">
+
+        <img src="/Content/logo-white.png" />
+
+        <p>Stop planning, start living.</p>
+
+        <p>Bringing back a true sense of adventure and spontaneity to a world full of choice.</p>
+
+        <p>Are you brave enough to sign-up for the unknown?  </p>
+
+        <a href="/Home/Form?type=risk" class="btn btn-primary btn-risk">I'm a Risk Taker</a>
+        <a href="/Home/Form?type=safer" class="btn btn-primary btn-safe">I'm a Play it Safer</a>
+
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+
+</body>
+</html>

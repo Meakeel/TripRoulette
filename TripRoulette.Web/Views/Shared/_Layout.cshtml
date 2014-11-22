@@ -1,12 +1,30 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Trip-Roulette</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - Trip Roulette</title>
+        <link href="/Content/bootstrap.css" rel="stylesheet" />
+        <link href="/Content/site.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="/Content/jquery.vegas.css" />
+        <script src="/Scripts/modernizr-2.6.2.js"></script>
+        <script src="/Scripts/jquery-1.10.2.js"></script>
+        <script src="/Scripts/jquery.vegas.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $.vegas('slideshow', {
+                delay: 8000,
+            backgrounds: [
+                { src: '/Content/background1.jpg', fade: 4000 },
+                { src: '/Content/background2.jpg', fade: 4000 },
+                { src: '/Content/background3.jpg', fade: 4000 }
+        ]
+            });
+        })
 
+        </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -26,6 +44,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />

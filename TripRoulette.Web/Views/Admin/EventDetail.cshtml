@@ -79,15 +79,37 @@
             <th>All Day?</th>
             <th>Start Time (24h)</th>
             <th>End Time (24h)</th></tr>
-            @foreach (var eventDetail in Model.EventDetails)
+            @if (Model.EventDetails.Count == 0)
             {
-            <tr>
-                <td>@Html.TextBoxFor(model => eventDetail.DayOfWeek)</td>
-                <td>@Html.CheckBoxFor(model => eventDetail.allDay)</td>
-                <td>@Html.TextBoxFor(model => eventDetail.StartTime)</td>
-                <td>@Html.TextBoxFor(model => eventDetail.EndTime)</td>
-            </tr>
+                <tr>
+                    <td>@Html.TextBoxFor(model => model.eventDetail.DayOfWeek)</td>
+                    <td>@Html.CheckBoxFor(model => model.eventDetail.allDay)</td>
+                    <td>@Html.TextBoxFor(model => model.eventDetail.StartTime)</td>
+                    <td>@Html.TextBoxFor(model => model.eventDetail.EndTime)</td>
+                </tr>
             }
+            else
+            {
+                foreach (var eventDetail in Model.EventDetails)
+                {
+                    <tr>
+                        <td>@Html.TextBoxFor(model => eventDetail.DayOfWeek)</td>
+                        <td>@Html.CheckBoxFor(model => eventDetail.allDay)</td>
+                        <td>@Html.TextBoxFor(model => eventDetail.StartTime)</td>
+                        <td>@Html.TextBoxFor(model => eventDetail.EndTime)</td>
+                    </tr>
+                }
+                <tr><td colspan="4">Add New</td></tr>
+    <tr>
+        <td>@Html.TextBoxFor(model => model.eventDetail.DayOfWeek)</td>
+        <td>@Html.CheckBoxFor(model => model.eventDetail.allDay)</td>
+        <td>@Html.TextBoxFor(model => model.eventDetail.StartTime)</td>
+        <td>@Html.TextBoxFor(model => model.eventDetail.EndTime)</td>
+    </tr>
+            }
+            
+
+
 
         </table>
 
