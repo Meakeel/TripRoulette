@@ -31,11 +31,11 @@
             </div>
         </div>
     </div>
-
-    @RenderBody()
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+         @Scripts.Render("~/bundles/jquery")
+         @Scripts.Render("~/bundles/bootstrap")
 
 </body>
 </html>

@@ -54,18 +54,43 @@ namespace TripRoulette.Web.Controllers
             //.FirstOrDefault(p => p.ProductID == productId);
             return View("EventEdit", events);
         }
-
-        public ActionResult EventDetails()
+        [HttpPost]
+        public ActionResult EventDetails(int eventID)
         {
 
             EventCollection events = new EventCollection();
-            events = Event.GetEventsAndDetails(1);
+            events = Event.GetEventsAndDetails(eventID);
             Event row = events[0];
-            //events = Event.
-
-            //        Product product = repository.Products
-            //.FirstOrDefault(p => p.ProductID == productId);
             return View("EventDetail", row);
+        }
+        [HttpPost]
+        public ActionResult EventDetailsSave(Event eventRow)
+        {
+
+            EventCollection events = new EventCollection();
+
+            events.Add(eventRow);
+            events.Save();
+            
+            return Redirect("Events");
+        }
+
+        [HttpPost]
+        public ActionResult EventDetailsAdd(int eventID)
+        {
+            EventDetailCollection eventCollection = new EventDetailCollection();
+            EventDetail newDetail = new EventDetail();
+            newDetail.EventID = eventID;
+            newDetail.StartTime = DateTime.UtcNow;
+            newDetail.EndTime = DateTime.UtcNow;
+            newDetail.DayOfWeek = 0;
+            newDetail.allDay = true;
+
+            eventCollection.Add(newDetail);
+            eventCollection.Insert();
+
+
+            return Redirect("Events");
         }
 
         [HttpPost]

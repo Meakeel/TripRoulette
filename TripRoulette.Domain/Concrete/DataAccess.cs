@@ -275,5 +275,56 @@ namespace TripRoulette.Domain.Concrete
 
         }
 
+        public void UpdateEvent(Event row)
+        {
+            SqlConnection sqlConnection = new SqlConnection(SqlconnectionString);
+            sqlConnection.Open();
+
+            SqlCommand cmd = new SqlCommand("updateEvent");
+            cmd.Connection = sqlConnection;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@eventID", row.EventID);
+            cmd.Parameters.AddWithValue("@name", row.Name);
+            cmd.Parameters.AddWithValue("@startDate", row.StartDate);
+            cmd.Parameters.AddWithValue("@endDate", row.EndDate);
+            cmd.Parameters.AddWithValue("@description", row.Description);
+            cmd.Parameters.AddWithValue("@price", row.Price);
+            cmd.Parameters.AddWithValue("@lunchPrice", row.LunchPrice);
+            cmd.Parameters.AddWithValue("@dinnerPrice", row.DinnerPrice);
+            cmd.Parameters.AddWithValue("@theme", row.Theme);
+            cmd.Parameters.AddWithValue("@postcode", row.Postcode);
+            cmd.Parameters.AddWithValue("@hint", row.Hint);
+            cmd.Parameters.AddWithValue("@fulldetails", row.FullDetails);
+            cmd.Parameters.AddWithValue("@duration", row.Duration);
+            cmd.Parameters.AddWithValue("@minPeople", row.MinPeople);
+            cmd.Parameters.AddWithValue("@maxPeople", row.MaxPeople);
+            //Google Maps Lang / Lat need to be added.
+            decimal lat = (decimal)11.1;
+            decimal lng = (decimal)1.6;
+            cmd.Parameters.AddWithValue("@lat", lat);
+            cmd.Parameters.AddWithValue("@lng", lng);
+            cmd.ExecuteNonQuery();
+
+        }
+
+        public void UpdateEventDetail(EventDetail row)
+        {
+            SqlConnection sqlConnection = new SqlConnection(SqlconnectionString);
+            sqlConnection.Open();
+
+            SqlCommand cmd = new SqlCommand("UpdateEventDetail");
+            cmd.Connection = sqlConnection;
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@eventDetailID", row.EventDetailID);
+            cmd.Parameters.AddWithValue("@eventID", row.EventID);
+            cmd.Parameters.AddWithValue("@dayOfWeek", row.DayOfWeek);
+            cmd.Parameters.AddWithValue("@startTime", row.StartTime);
+            cmd.Parameters.AddWithValue("@endTime", row.EndTime);
+            cmd.Parameters.AddWithValue("@allDay", row.allDay);
+            cmd.ExecuteNonQuery();
+
+        }
+
     }
 }

@@ -5,9 +5,8 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-@using (Html.BeginForm("EventDetail", "Admin"))
+@using (Html.BeginForm("EventDetailsSave", "Admin"))
 {
-    <div>
 
         <table class="table table-striped table-condensed table-bordered">
             <tr>
@@ -78,44 +77,44 @@
             <tr><th>Day of Week</th>
             <th>All Day?</th>
             <th>Start Time (24h)</th>
-            <th>End Time (24h)</th></tr>
-            @if (Model.EventDetails.Count == 0)
+            <th>End Time (24h)</th>
+                <th>Event ID</th>
+                <th>Event Details ID</th>
+            </tr>
+ 
+            @for (int i = 0; i < Model.EventDetails.Count; i++)
             {
                 <tr>
-                    <td>@Html.TextBoxFor(model => model.eventDetail.DayOfWeek)</td>
-                    <td>@Html.CheckBoxFor(model => model.eventDetail.allDay)</td>
-                    <td>@Html.TextBoxFor(model => model.eventDetail.StartTime)</td>
-                    <td>@Html.TextBoxFor(model => model.eventDetail.EndTime)</td>
+                    <td>@Html.TextBoxFor(model => Model.EventDetails[i].DayOfWeek)</td>
+                    <td>@Html.CheckBoxFor(model => Model.EventDetails[i].allDay)</td>
+                    <td>@Html.TextBoxFor(model => Model.EventDetails[i].StartTime)</td>
+                    <td>@Html.TextBoxFor(model => Model.EventDetails[i].EndTime)</td>
+                    <td>@Html.TextBoxFor(model => Model.EventDetails[i].EventID)</td>
+                    <td>@Html.TextBoxFor(model => Model.EventDetails[i].EventDetailID)</td>
                 </tr>
             }
-            else
-            {
-                foreach (var eventDetail in Model.EventDetails)
-                {
-                    <tr>
-                        <td>@Html.TextBoxFor(model => eventDetail.DayOfWeek)</td>
-                        <td>@Html.CheckBoxFor(model => eventDetail.allDay)</td>
-                        <td>@Html.TextBoxFor(model => eventDetail.StartTime)</td>
-                        <td>@Html.TextBoxFor(model => eventDetail.EndTime)</td>
-                    </tr>
-                }
-                <tr><td colspan="4">Add New</td></tr>
-    <tr>
-        <td>@Html.TextBoxFor(model => model.eventDetail.DayOfWeek)</td>
-        <td>@Html.CheckBoxFor(model => model.eventDetail.allDay)</td>
-        <td>@Html.TextBoxFor(model => model.eventDetail.StartTime)</td>
-        <td>@Html.TextBoxFor(model => model.eventDetail.EndTime)</td>
-    </tr>
-            }
+            <tr><td colspan="4">
+                Sunday = 0,
+        Monday = 1,
+        Tuesday = 2,
+        Wednesday = 3,
+        Thursday = 4,
+        Friday = 5,
+        Saturday = 6,</td></tr>
             
-
-
-
         </table>
 
-    </div>
+
 
     <div class="panel-footer">
         <input type="submit" value="Save" class="btn btn-default" />
+    </div>
+}
+
+@using (Html.BeginForm("EventDetailsAdd", "Admin"))
+{
+    @Html.Hidden("EventID", @Model.EventID)
+    <div class="panel-footer">
+        <input type="submit" value="Add Event Detail" class="btn btn-default" />
     </div>
 }

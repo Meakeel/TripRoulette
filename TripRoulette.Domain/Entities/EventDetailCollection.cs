@@ -14,6 +14,16 @@ namespace TripRoulette.Domain.Entities
             //Loop through the collection and save each row.
             foreach (EventDetail row in this)
             {
+                dbconnection.UpdateEventDetail(row);
+            }
+        }
+
+        public void Insert()
+        {
+            DataAccess dbconnection = new DataAccess();
+            //Loop through the collection and save each row.
+            foreach (EventDetail row in this)
+            {
                 dbconnection.InsertEventDetail(row);
             }
         }
