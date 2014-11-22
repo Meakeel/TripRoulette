@@ -157,7 +157,7 @@ namespace TripRoulette.RandomGenerator
                 }
 
                 Random rnd = new Random(DateTime.Now.Ticks.GetHashCode());
-                int rndIndex = rnd.Next(0, matches.Count - 1);
+                int rndIndex = rnd.Next(0, matches.Count);
                 bool canLoop = true;
                 List<int> tried = new List<int>();
                 bool foundEvent = false;
