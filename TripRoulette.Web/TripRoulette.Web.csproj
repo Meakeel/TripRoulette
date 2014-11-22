@@ -177,6 +177,13 @@
     <Content Include="Content\logo-white.png" />
     <Content Include="Content\logo.png" />
     <Content Include="Content\Site - Copy.css" />
+    <Content Include="Content\slider-left.png" />
+    <Content Include="Content\slider-right.png" />
+    <Content Include="Content\spin1.jpg" />
+    <Content Include="Content\spin2.jpg" />
+    <Content Include="Content\spin3.jpg" />
+    <Content Include="Content\spin4.jpg" />
+    <Content Include="Content\spin5.jpg" />
     <Content Include="Content\tram.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -190,6 +197,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.datetimepicker.js" />
+    <Content Include="Scripts\jquery.scrollbox.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
