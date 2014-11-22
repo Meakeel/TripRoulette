@@ -166,6 +166,7 @@ namespace TripRoulette.RandomGenerator
 
                 while (canLoop)
                 {
+                    canLoop = false;
                     DataRow row = dt.Rows[matches[rndIndex]];
 
                     DataTable dtTimes = SQL.Execute<DataTable>(
