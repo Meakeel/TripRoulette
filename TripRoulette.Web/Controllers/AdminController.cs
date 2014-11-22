@@ -22,46 +22,25 @@ namespace TripRoulette.Web.Controllers
             EventCollection events = new EventCollection();
             events = Event.GetEvents();
 
-            //events = Event.
-
-            //        Product product = repository.Products
-            //.FirstOrDefault(p => p.ProductID == productId);
             return View("Event",events);
         }
-        //[HttpPost]
-        //public ActionResult Events(Event eventItem)
-        //{
 
-        //    EventCollection events = new EventCollection();
-        //    events = Event.GetEvents();
-
-        //    //events = Event.
-
-        //    //        Product product = repository.Products
-        //    //.FirstOrDefault(p => p.ProductID == productId);
-        //    return View("Event", events);
-        //}
-
-        public ActionResult EventEdit()
-        {
-
-            Event events = new Event();
-            events = Event.GetEvent(1);
-
-            //events = Event.
-
-            //        Product product = repository.Products
-            //.FirstOrDefault(p => p.ProductID == productId);
-            return View("EventEdit", events);
-        }
         [HttpPost]
         public ActionResult EventDetails(int eventID)
         {
-
+            //Make sure the Event ID has been passeed in
             EventCollection events = new EventCollection();
             events = Event.GetEventsAndDetails(eventID);
             Event row = events[0];
             return View("EventDetail", row);
+
+        }
+
+        [HttpGet]
+        public ActionResult EventDetails()
+        {
+            //Redirect to the Events Selector.
+            return Redirect("Events");
         }
         [HttpPost]
         public ActionResult EventDetailsSave(Event eventRow)
