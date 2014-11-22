@@ -5,12 +5,13 @@ using System.Web;
 using TripRoulette.Domain.Entities;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace TripRoulette.Domain.Concrete
 {
     public class DataAccess
     {
-        public string SqlconnectionString = "Server=localhost\\SQL2012;Database=TravelRoulette;User Id=sa;Password=TravelRoulette;";
+        public String SqlconnectionString = ConfigurationManager.ConnectionStrings["TripRouletteDB"].ConnectionString;
 
         public Event Get_Event(int id)
         {
