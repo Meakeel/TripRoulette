@@ -24,6 +24,7 @@
 ######################
 *.log
 *.sql
+!TripRoulette.SQL/
 *.sqlite
  
 # OS generated files #
