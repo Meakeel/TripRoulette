@@ -17,7 +17,7 @@ namespace TripRoulette.Web.Controllers
         {
             /// Code here!!!!.....
             /// 
-
+            HttpContext.Trace.Warn("Sending email");
             try
             {
                 TripRoulette.RandomGenerator.RandomGenerator.GenerateRandomTrip(
