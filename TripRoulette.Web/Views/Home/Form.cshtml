@@ -32,6 +32,21 @@
                     $('#theform').hide();
                     $('.slider-container-main').fadeIn();
 
+                    var data = {
+                        numPeople: $('#howmanypeople').val(),
+                        leave: $('#whencanyouleave').val(),
+                        budget: $('#budget').val(),
+                        leavingfrom: $('#leavingfrom').val()
+                    };
+
+                    $.ajax({
+                        url: '@Url.Action("SendEmail")',
+                        type: "POST",
+                        async: true,
+                        data: data,
+
+                    });
+
                     setTimeout(function () { showResults(); }, 6000);
 
                 });
@@ -84,7 +99,7 @@
                 <div class="form-group">
                     <label class="control-label col-sm-6 " for="howmanypeople">How many people</label>
                     <div class="col-sm-4">
-                        <select name="howmanypeople" class="form-control">
+                        <select name="howmanypeople" id="howmanypeople" class="form-control">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -110,11 +125,11 @@
                 <div class="form-group">
                     <label class="control-label col-sm-6 " for="budget">Budget</label>
                     <div class="col-sm-4">
-                        <select name="budget" class="form-control">
-                            <option>£50</option>
-                            <option>£100</option>
-                            <option>£150</option>
-                            <option>£200</option>
+                        <select name="budget" id="budget" class="form-control">
+                            <option value="50">£50</option>
+                            <option value="100">£100</option>
+                            <option value="150">£150</option>
+                            <option value="200">£200</option>
                         </select>
                     </div>
                 </div>
@@ -150,7 +165,7 @@
         <div class="results">
             <h2>Your adventure begins...but first we need your money!</h2>
 
-            <p><img src="/Content/pay.png" /></p>
+            <p><a href="@Url.Action("Results")"><img src="/Content/pay.png" /></a></p>
 
         </div>
 

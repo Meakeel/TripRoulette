@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Roulette</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/site.css" rel="stylesheet" />
+    <link href="/Content/jquery.datetimepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/Content/jquery.vegas.css" />
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+    <script src="/Scripts/jquery.vegas.js"></script>
+    <script src="/Scripts/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.scrollbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#slider1").scrollbox({
+                direction: 'h',
+                step: 1,
+                delay: 0,
+                speed: 30
+            });
+
+            $('#go').click(function (e) {
+
+                $('#theform').fadeOut('slow', function () {
+
+                    $('#theform').hide();
+                    $('.slider-container-main').fadeIn();
+
+                    setTimeout(function () { showResults(); }, 6000);
+
+                });
+
+                e.stopPropagation();
+                return false;
+            })
+
+
+            $('.datetimepicker').datetimepicker();
+
+
+            function showResults() {
+                $('.slider-container-main').fadeOut().hide();
+                $('.results').fadeIn();
+            }
+
+        });
+
+    </script>
+</head>
+<body class="page">
+
+
+    <div class="navigation safer">
+
+        <img src="/Content/logo.png" />
+
+        <div class="pull-right">
+            <a href="/form.htm?type=risk" class="btn btn-primary btn-risk">I'm a Risk Taker</a>
+            <a href="/form.htm?type=safer" class="btn btn-primary btn-safe">I'm a Play it Safer</a>
+
+        </div>
+
+    </div>
+    <div class="left-margin">
+        <p>So you fancy yourself as a risk taker? Congratulations in taking your first steps!</p>
+
+        <p>Simply enter a few details and Trip Roulette will create a bespoke adventure just for you.</p>
+
+        <p>We do all of the hard work, and organise everything for you, including transport. The twist is you don’t know where you are going or what you will be doing until the day, which is when you will receive an email and text giving information of your trip.</p>
+
+        <p>Now leave the hard work to us and have a great time! </p>
+    </div>
+    <div class="main-content">
+
+        <h2>Thank you!</h2>
+
+    </div>
+
+
+</body>
+</html>

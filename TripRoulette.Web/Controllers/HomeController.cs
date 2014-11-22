@@ -13,6 +13,20 @@ namespace TripRoulette.Web.Controllers
             return View();
         }
 
+        public ActionResult SendEmail(string numPeople, string leave, string budget, string leavingfrom)
+        {
+            /// Code here!!!!.....
+
+
+            return View();
+        }
+
+
+        public ActionResult Results()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
