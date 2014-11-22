@@ -21,15 +21,15 @@ namespace TripRoulette.Web.Controllers
             HttpContext.Trace.Warn("Sending email");
             try
             {
-                TripRoulette.RandomGenerator.RandomGenerator.GenerateRandomTrip(
-                    Convert.ToInt32(numPeople),
-                    DateTime.Parse(leave),
-                    Convert.ToDecimal(budget),
-                    null,
-                    leavingfrom,
-                    "crowesoft@gmail.com"
+                //TripRoulette.RandomGenerator.RandomGenerator.GenerateRandomTrip(
+                //    Convert.ToInt32(numPeople),
+                //    DateTime.Parse(leave),
+                //    Convert.ToDecimal(budget),
+                //    null,
+                //    leavingfrom,
+                //    "crowesoft@gmail.com"
 
-                );
+                //);
             }
             catch(Exception ex)
             {
