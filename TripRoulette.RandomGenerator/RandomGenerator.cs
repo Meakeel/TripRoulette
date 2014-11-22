@@ -174,7 +174,7 @@ namespace TripRoulette.RandomGenerator
                         SQLHelper.ExecuteTypes.Reader,
                         null
                     );
-                    int x = 0;
+
                     if (dtTimes.Rows.Count > 0)
                     {
 
